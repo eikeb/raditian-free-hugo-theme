@@ -1,6 +1,18 @@
 /* You can customize theme styles here */
-.header .navbar-brand span:first-child{
-    color: #478079;
+/** Fix misplacement and coloration of first name in header */
+.header .navbar-brand span:first-child {
+  margin-top: -4px;
+  color: #478079;
+}
+
+/** Fixed the misplacement of the second image  */
+.section div[class*="col-"] img.image-left-overflow {
+  margin-left: 0px;
+}
+
+/** Improves the public speaking section */
+#public-speaking .row {
+  margin-left: 0;
 }
 
 html body ::selection{
