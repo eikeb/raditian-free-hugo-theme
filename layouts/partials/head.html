@@ -50,8 +50,3 @@
     {{- end }}
   />
 </noscript>
-<!-- Google tag (gtag.js), google analytics -->
-<script defer src="https://www.googletagmanager.com/gtag/js?id=UA-465407-4"></script>
-{{ $analytics := resources.Get "js/analytics.js" | resources.Minify }}
-<script defer src="{{ $analytics.Permalink }}"></script>
-
